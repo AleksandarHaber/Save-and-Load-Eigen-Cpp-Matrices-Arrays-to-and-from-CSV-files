@@ -4,6 +4,8 @@ find_package(Eigen3 REQUIRED)
 
 include_directories(${CMAKE_SOURCE_DIR})
 
+configure_file(${CMAKE_SOURCE_DIR}/path.hpp.in ${CMAKE_SOURCE_DIR}/path.hpp)
+
 add_executable(double_test double_test.cpp)
 target_link_libraries(double_test Eigen3::Eigen)
 

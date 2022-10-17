@@ -2,6 +2,7 @@
 //
 
 #include "save_load_eigen_csv.hpp"
+#include "path.hpp"
 
 int main()
 {
@@ -15,13 +16,14 @@ int main()
 		13, 14, 15, 16;
 
 	// save test matrix
-	saveData<int>("matrix.csv", matrix_test);
+	std::string matrixFile = build_path + std::string("matrix.csv");
+	saveData<int>(matrixFile, matrix_test);
 
 	// matrix to be loaded from a file
 	Eigen::MatrixXi matrix_test2;
 
 	// load the matrix from the file
-	matrix_test2 = openData<int>("matrix.csv");
+	matrix_test2 = openData<int>(matrixFile);
 
 	// print the matrix in console
 	std::cout << matrix_test2 << std::endl;
