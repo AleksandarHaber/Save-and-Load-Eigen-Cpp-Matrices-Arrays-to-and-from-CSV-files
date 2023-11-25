@@ -1,0 +1,6 @@
+#ifndef PATH_HPP
+#define PATH_HPP
+
+const auto build_path= "${CMAKE_CURRENT_BINARY_DIR}/";
+
+#endif /* PATH_HPP */
