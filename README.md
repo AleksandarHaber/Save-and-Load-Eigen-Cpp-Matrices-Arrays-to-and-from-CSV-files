@@ -1,4 +1,7 @@
 # Save-and-Load-Eigen-Cpp-Matrices-Arrays-to-and-from-CSV-files
+
+**IMPORTANT NOTE: First, thoroughly read the license in the file called LICENSE.md!**
+
 The functions provided in this C++ source file are used to save and load Eigen C++ matrices/arrays to and from CSV values. The post accompanying these codes is provided here:
 
 https://aleksandarhaber.com/eigen-matrix-library-c-tutorial-saving-and-loading-data-in-from-a-csv-file/
